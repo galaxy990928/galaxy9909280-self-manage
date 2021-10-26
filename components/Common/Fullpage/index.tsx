@@ -1,14 +1,21 @@
-import React from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
 
-interface IProps {
-  children: React.ReactElement;
-}
-
-const Fullpage = ({ children }: IProps) => (
+const Fullpage = () => (
   <ReactFullpage
     scrollingSpeed={1000}
-    render={() => <ReactFullpage.Wrapper>{children}</ReactFullpage.Wrapper>}
+    render={({ fullpageApi }) => (
+      <ReactFullpage.Wrapper>
+        <div className="section">
+          <p>Section 1 (welcome to fullpage.js)</p>
+          <button type="button" onClick={() => fullpageApi.moveSectionDown()}>
+            Click me to move down
+          </button>
+        </div>
+        <div className="section">
+          <p>Section 2</p>
+        </div>
+      </ReactFullpage.Wrapper>
+    )}
   />
 );
 
