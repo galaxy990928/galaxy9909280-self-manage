@@ -27,6 +27,9 @@
       { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
     ],
     "no-use-before-define": "off",
-    "object-curly-newline": "off"
+    "object-curly-newline": "off",
+    "import/extensions": "off",
+    "import/prefer-default-export": "off",
+    "operator-linebreak": "off"
   }
 }

@@ -1,9 +1,5 @@
-import Fullpage from '@components/Common/Fullpage';
+import React from 'react';
 
-const Index = () => (
-  <Fullpage>
-    <div>sss</div>
-  </Fullpage>
-);
+const Index = (): React.ReactElement => <div>ss</div>;
 
 export default Index;
