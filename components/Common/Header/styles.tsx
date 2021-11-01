@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const HeaderWrapper = styled.div`
   width: 100%;
   height: 60px;
+  padding-top: 20px;
 
   @media screen and (min-width: 1020px) {
     height: 80px;
@@ -20,14 +21,10 @@ export const MenuWrap = styled.div`
 `;
 
 export const MenuBarWrap = styled.div`
-  svg {
-    width: 22px;
-    height: 100%;
-    display: block;
-    fill: inherit;
-    flex-shrink: 0;
-    user-select: auto;
-  }
+  width: 22px;
+  height: 100%;
+  display: block;
+
   @media screen and (min-width: 1020px) {
     display: none;
   }

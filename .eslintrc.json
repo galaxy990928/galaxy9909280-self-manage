@@ -30,6 +30,8 @@
     "object-curly-newline": "off",
     "import/extensions": "off",
     "import/prefer-default-export": "off",
-    "operator-linebreak": "off"
+    "operator-linebreak": "off",
+    "no-param-reassign": "off",
+    "comma-dangle": "off"
   }
 }
